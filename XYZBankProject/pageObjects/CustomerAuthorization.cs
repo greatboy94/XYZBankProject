@@ -20,7 +20,7 @@ namespace XYZBankProject.pageObjects
             PageFactory.InitElements(driver, this);
         }
 
-        public CustomerAccount SelectNames()
+        public CustomerAccount Auth()
         {
             selectYourName.Click();
             selectFirstOption.Click();

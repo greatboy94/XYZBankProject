@@ -23,6 +23,12 @@ namespace XYZBankProject.pageObjects
             customerLoginButton.Click();
             return new CustomerAuthorization();
         }
+
+        public ManagerAuthorization LoginAsManager()
+        {
+            managerLoginButton.Click();
+            return new ManagerAuthorization();
+        }
         
     }    
 }

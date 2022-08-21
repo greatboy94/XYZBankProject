@@ -7,10 +7,10 @@ namespace XYZBankProject.tests
     public class CustomerAuthorizationTest : BaseDriverSetUp
     {
         [Test]
-        public void Check()
+        public void CheckCustomer()
         {
              HomePage homePage = new HomePage();
-             homePage.LoginAsCustomer().SelectNames();
+             homePage.LoginAsCustomer().Auth();
              CustomerAccount account = new CustomerAccount();
              Assert.AreEqual(BaseConfig.expectedTitle, account.GetTitle());
              account.Deposit("100");
